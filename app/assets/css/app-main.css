@@ -1,0 +1,111 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
+
+* { font-family: 'Roboto', sans-serif; line-height:1.2; vertical-align:middle; }
+
+iframe{
+    border:none !important;
+    overflow: hidden !important;
+}
+
+.dish {
+    padding:0;
+    box-shadow:0 1px 2px #aaa;
+    background:white;
+    border-radius:3px;
+    user-select:none;
+    animation:fly-in-from-left .5s 1s ease both;
+    transform-origin:top left;
+    box-sizing: border-box;
+    resize:both;
+}
+
+.dish.regular{
+    width: 168px;
+    height: 168px;
+}
+.dish.half {
+    width: 55px;
+    height: 55px;
+}
+.card.double {
+    width: 386px;
+    height: 386px;
+}
+
+.dish.double-vertical {
+    height: 250px;
+}
+.dish.triple {
+    width: 380px;
+}
+.dish.triple-vertical {
+    height: 380px;
+}
+.dish.quadro {
+    width: 510px;
+}
+.dish.quadro-vertical {
+    height: 510px;
+}
+
+.dish.ui-draggable-dragging,
+.dish.is-positioning-post-drag {
+    z-index: 2;
+    bottom: 0;
+    box-shadow:0 6px 15px 0 rgba(0, 0, 0, 0.3);
+    cursor:move;
+}
+
+/*sensor-tile.ui-draggable-dragging,
+sensor-tile.is-positioning-post-drag {
+    z-index: 2;
+    bottom: 0;
+    box-shadow:0 6px 15px 0 rgba(0, 0, 0, 0.3);
+    cursor:move;
+}*/
+
+/*nam-weather.ui-draggable-dragging,
+nam-weather.is-positioning-post-drag {
+    z-index: 2;
+    bottom: 0;
+    box-shadow:0 6px 15px 0 rgba(0, 0, 0, 0.3);
+    cursor:move;
+}*/
+
+.dish:after {
+    position:absolute;
+    font-size:.9rem;
+    top:1.5rem;
+    right:1rem;
+    border:thin solid gray;
+    color:gray;
+    width:1rem;
+    line-height:1rem;
+    text-align:center;
+    border-radius:50%;
+    pointer-events:none;
+}
+
+h1 {
+    font-size:2rem;
+    font-weight:200;
+}
+strong {
+    font-weight:300;
+    color:#539D00;
+}
+
+h2 {
+    font-size:.9rem;
+    line-height:2.5;
+    color:gray;
+    font-weight:400;
+}
+
+.map {
+    height:12rem;
+    background:whitesmoke;
+    margin:.5rem 0 0 -1.5rem;
+    width:28rem;
+
+}
