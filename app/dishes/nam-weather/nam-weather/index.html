@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NAM-Weather: Dish app</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <!--<link rel="stylesheet" href="imports/nam-weather-display/font-awesome/css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="imports/nam-weather-display/meteocons/css/fontello.css" type="text/css">-->
+
+        <!-- Web Components Polyfils -->
+        <script src="components/webcomponentsjs/webcomponents.js"></script>
+        <script src="assets/js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqJg9SSds3WSA6fdKH_NGb5_fkivk8mI8"></script>
+        <script src="assets/js/modernizr.custom.52158.js"></script>
+        <script src="assets/js/window.resizeStop.js"></script>
+        <script src="assets/js/underscore-min.js"></script>
+
+        <!-- Sensor Tile app import -->
+        <!-- CSS -->
+        <link href='assets/css/dish.css' rel='stylesheet' type='text/css'>
+
+        <!-- Nam-weather -->
+        <link rel="import" href="imports/nam-weather-display/nam-weather-display.html">
+
+        <style>
+            html,body {
+                height: 100%;
+                margin: 0;
+                background-color: #e5e5e5;
+            }
+
+            [unresolved]{
+
+            }
+        </style>
+    </head>
+
+    <body unresolved>
+        <div layout vertical fit center-center>
+            <nam-weather-display></nam-weather-display>
+        </div>
+
+        <script>
+            /* Dish app initialization */
+            //...
+
+            /* NAM-weather specific initialization */
+            document.addEventListener('polymer-ready', function() {
+                //...
+
+            });
+
+        </script>
+    </body>
+</html>
